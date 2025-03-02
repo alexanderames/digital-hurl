@@ -54,25 +54,42 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Connect with Me</h2>
         <ul className="mt-4 space-y-2">
           <motion.li whileHover={{ scale: 1.05 }}>
-            <a href="https://www.instagram.com/yourhandle"
+            <a href="https://www.instagram.com/__alexander_not_alex/"
                target="_blank"
                rel="noopener noreferrer"
                className="hover:underline">Instagram</a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.05 }}>
-            <a href="https://letterboxd.com/yourprofile"
+            <a href="https://letterboxd.com/whichletter/"
                target="_blank"
                rel="noopener noreferrer"
                className="hover:underline">Letterboxd</a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.05 }}>
-            <a href="https://actorsaccess.com/yourprofile"
+            <a href="https://resumes.actorsaccess.com/2093257-5848115"
                target="_blank"
                rel="noopener noreferrer"
                className="hover:underline">Actors Access</a>
           </motion.li>
         </ul>
       </motion.div>
+
+      <section className="mt-16 fade-in">
+        <h2 className="text-3xl font-bold">Photography Gallery</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+          {/* Add your photography images here */}
+          <img src="https://im.vsco.co/1/55d5ea33717596777575/5888b7b038b1d37731ed0899/vsco_012517.jpg" alt="PortraitOnAPortrait" className="w-full h-auto object-cover" />
+          <img src="https://im.vsco.co/1/55d5ea33717596777575/5627d37682eca550235c7af4/vsco_102115.jpg" alt="LandLine" className="w-full h-auto object-cover" />
+          <img src="https://im.vsco.co/1/55d5ea33717596777575/55e098d5fff3510c5fea5ab4/vsco_082815.jpg" alt="TopsOff" className="w-full h-auto object-cover" />
+        </div>
+      </section>
+
+      <section className="mt-16 fade-in">
+        <h2 className="text-3xl font-bold">About Me</h2>
+        <p className="mt-4 text-lg">
+          I&apos;m Alexander, a passionate artist and photographer. I love capturing moments and creating unique visual experiences. Follow my journey through my portfolio and connect with me on social media.
+        </p>
+      </section>
 
       <Canvas className="absolute top-0 left-0 w-full h-full z-[-1]">
         {/* Three.js scene setup here */}
